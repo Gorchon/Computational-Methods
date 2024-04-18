@@ -1,0 +1,65 @@
+# Reserved Words / Keywords: These are words that have a special meaning in a
+# language and cannot be used for identifiers like variable names.
+# Examples: if, else, for, while, class, etc.
+# Color: Blue (e.g., #0000FF)
+if condition:
+    pass
+else:
+    pass
+for i in range(10):
+    print(i)
+while condition:
+    break
+class MyClass:
+    def __init__(self):
+        self.attribute = None
+    def my_function(self):
+        return None
+
+# Operators: Symbols that perform operations on variables and values.
+# Color: Dark Red (e.g., #8B0000)
+# Examples : +, -, *, /, =, ==, etc.
+a = 10
+b = 5
+c = a + b
+d = a * b
+is_equal = (a == b)
+not_equal = (a != b)
+
+# Literals: Directly inserted values in the code.
+# Color: Dark Green (e.g., #006400)
+# This includes numbers (123, 3.14), strings ("hello", 'world'), and boolean values (true, false).
+number = 123
+pi = 3.14
+greeting = "hello"
+flag = True
+
+# Comments: Non-executable lines that provide explanations or annotations.
+# Color: Light Grey (e.g., #808080)
+# This is a single-line comment
+'''
+This is a
+multi-line comment
+'''
+
+# Identifiers / Variables: Names given to elements like variables and functions.
+# Color: Pink (#FF00FF)
+my_variable = "value"
+user_class_instance = UserClass()
+def calculate_interest(principal, rate):
+    return principal * rate
+
+# Strings: Sequences of characters used in Python. Strings are enclosed in quotes, e.g.,
+# "Hello, world!" or '''Multi-line string'''.
+# Color: Dark Orange (e.g., #FF8C00)
+string = "hello I am a string"
+string = 'hello I am a string'
+
+# Built-in Functions and Exceptions: Names of functions and exceptions that are always
+# available in Python. Examples include print(), len(), range(), SyntaxError, IndexError,
+# etc.
+# Color: Purple (e.g., #800080)
+print("Hello")
+len("Hello")
+for i in range(10):
+    print(i)
