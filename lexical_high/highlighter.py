@@ -1,4 +1,4 @@
-import re
+import re 
 
 def highlight_code(code):
     
@@ -16,12 +16,13 @@ def highlight_code(code):
     patterns = {
         'comment': (r'(\#.*?$)|(\'\'\'[\s\S]*?\'\'\')|(\"\"\"[\s\S]*?\"\"\")', styles['comment']),
         'string': (r'(\".*?\"|\'.*?\')', styles['string']),
-        'keyword': (r"\b(if|else|for|while|class|break|continue|return|try|except|finally|with|as|import|from|def|lambda|nonlocal|global|assert|yield|raise)\b", styles['keyword']),
+        'keyword': (r"\b(if|else|for|while|class|break|continue|return|try|except|finally|with|as|import|from|def|lambda|nonlocal|global|assert|yield|raise|in|pass|self|None )\b", styles['keyword']),
         'builtin': (r"\b(print|len|range|SyntaxError|IndexError)\b", styles['builtin']),
         'operator': (r"(\+|\-|\*|\/|\%|\=|\=\=|\!\=|\<|\>|\<\=|\>\=|\&|\||\~|\^|\>\>|\<\<)", styles['operator']),
         'literal': (r'(\b\d+\b|\b\d+\.\d+\b|\bTrue\b|\bFalse\b)', styles['literal']),
         'identifier': (r"\b[a-zA-Z_][a-zA-Z0-9_]*\b", styles['identifier'])
     }
+
 
     # Create a combined regex pattern with proper named groups
     combined_pattern = '|'.join(f'(?P<{name}>{pattern})' for name, (pattern, _) in patterns.items())
